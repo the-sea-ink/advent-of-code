@@ -8,6 +8,7 @@ __pycache__/
 
 # AoC files
 *.txt
+muster.py
 
 # Distribution / packaging
 .Python
