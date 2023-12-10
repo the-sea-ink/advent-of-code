@@ -97,7 +97,6 @@ def part2(vals):
     for i, elem in enumerate(sorted_list): 
         product += (i+1)*int(elem[2]) 
     return product
-    return 
 
 if __name__ == "__main__":
     print(part1(read_input("input.txt")))
