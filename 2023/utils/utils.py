@@ -10,7 +10,7 @@ def read_input(day: str ='01', filename: str = "input.txt"):
     
 def flip(vert_list: list, counter = False):
     """
-    Takes a list of strings and returns a 90 degree flipped version.
+    Takes a list of strings and returns a diagonally flipped version.
     Can be used for easier processing of lists horizontally instead of vertically.
     """
     if not counter:
@@ -21,3 +21,13 @@ def flip(vert_list: list, counter = False):
     for row in horiz_list:
         horiz_list_of_strings.append(''.join(row))
     return horiz_list_of_strings
+
+def rotate_90_degrees(orig_list: list):
+    """
+    Rotates a list 90 degrees clockwise
+    """
+    rotated_strings = []
+    rotated = list(zip(*orig_list))
+    for row in rotated:
+        rotated_strings.append(''.join(row))
+    return rotated_strings
